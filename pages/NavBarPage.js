@@ -27,7 +27,6 @@ class NavBar extends BasePage {
     }
 
     async clickForLawyers() {
-    //await this.forLawyersButton.waitFor();
     await this.forLawyersButton.click();
 }
 

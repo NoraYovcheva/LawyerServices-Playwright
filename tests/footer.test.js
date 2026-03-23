@@ -49,7 +49,7 @@ test.describe('Footer tests', () => {
     await footerPage.scrollToFooter();
     await footerPage.sofiaLink.click();
     await page.waitForURL('**/lawyers/*');
-    //await expect(page.url()).toContain('София');
+  
     await expect(page).toHaveURL('https://localhost:44314/lawyers/%D0%A1%D0%BE%D1%84%D0%B8%D1%8F');
 });
 
@@ -66,7 +66,7 @@ test('When I click Наказателно право it should open', async({pag
     await footerPage.scrollToFooter();
     await footerPage.areasOfLawTitle.click();
     await page.waitForURL('**/lawyers/*');
-    //await expect(page.url()).toContain('Наказателно%20право');
+    
     await expect(page).toHaveURL('https://localhost:44314/lawyers/%D0%9D%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%BD%D0%BE%20%D0%BF%D1%80%D0%B0%D0%B2%D0%BE');
 });
 

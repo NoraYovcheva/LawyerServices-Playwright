@@ -13,8 +13,6 @@ class DashboardPage extends BasePage {
     await this.page.waitForLoadState('networkidle');
     await this.welcomeTitle.waitFor();  
     return await this.welcomeTitle.isVisible();
-    //await this.page.waitForSelector(this.welcomeTitle);
-    //return await this.page.locator(this.welcomeTitle).isVisible();
 }
 
     async getDashboardName() {
