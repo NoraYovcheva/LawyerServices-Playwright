@@ -115,8 +115,10 @@ package.json
 
 ## Notes
 
-The web application under test is not publicly available.
-It runs locally in development mode and cannot be accessed from the Internet.
+The web application under test is not publicly available and runs locally in development mode.
+Automated tests are designed to run in a local environment where the backend and database are available.
+CI/CD (GitHub Actions) is not configured, as the application is not deployed and cannot be accessed from the Internet.
+To run the tests successfully, the application must be started locally.
 
 ## This repository showcases:
 
