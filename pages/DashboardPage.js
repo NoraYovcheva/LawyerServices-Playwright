@@ -27,19 +27,6 @@ class DashboardPage extends BasePage {
     return await this.cards.count();
 }
 
-// async areAllCardsVisible() {
-//     await this.page.waitForLoadState('networkidle');
-
-//     const count = await this.cards.count();
-
-//     for (let i = 0; i < count; i++) {
-//         if (!(await this.cards.nth(i).isVisible())) {
-//             return false;
-//         }
-//     }
-//     return true;
-// }
-
 async areAllCardsVisible() {
     await expect(this.cards.first()).toBeVisible();
 
